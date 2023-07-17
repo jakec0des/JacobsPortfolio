@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <img src="resources/logoJACOB.png" class="logo" alt="LOGO FOR PAGE">
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="courses.html">Courses</a></li>
+
+
+        </ul>
+    </nav>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="resources/ProfilePicture.png" alt="Profile Picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        Hello, I'm Jacob!
+
+                        I am a <span class="bolded">student software developer</span> with a passion for creating <span
+                            class="bolded">web applications</span> and solving technical problems. I am currently
+                        pursuing an education in <span class="bolded">Computer Programming</span> at <span
+                            class="bolded">Algonquin College</span>, I am dedicated to expanding my knowledge and
+                        gaining hands-on experience in real-life situations.
+
+                        Throughout my academic journey, I have developed a strong foundation in software engineering
+                        principles and gained proficiency in several programming languages such as <span
+                            class="bolded">Java, C++, Python, HTML, and CSS</span>. I have also delved into data
+                        structures and acquired practical knowledge in <span class="bolded">SQL</span>.
+
+                        Beyond my technical skills, I am a proactive and dedicated individual constantly seeking
+                        personal and professional growth opportunities. With excellent problem-solving abilities and
+                        effective communication skills, I thrive in collaborative team environments and value the power
+                        of collective expertise.
+                        <br><br>
+                        I am particularly interested in securing a challenging <span class="bolded">co-op</span>
+                        placement in a high-quality engineering environment starting in <span class="bolded">January
+                            2024</span>. My goal is to work on exciting projects, learn from experienced professionals,
+                        and contribute my skills to make a meaningful impact.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('SKILLS')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('EXPERIENCE')">EXPERIENCE</p>
+                        <p class="tab-links" onclick="opentab('EDUCATION')">EDUCATION</p>
+                        <p class="tab-links" onclick="opentab('GOALS')">GOALS</p>
+                        <p class="tab-links" onclick="opentab('PROJECTS')">PROJECTS</p>
+
+
+                    </div>
+                    <div class="tab-contents active-tab" id="SKILLS">
+                        <ul>
+                            <li><span>HTML</span><br><progress id="file1" value="72" max="100"> 72% </progress></li>
+                            <li><span>JAVA</span><br><progress id="file2" value="82" max="100"> 82% </progress></li>
+                            <li><span>SQL</span><br><progress id="file3" value="72" max="100"> 72% </progress></li>
+                            <li><span>CSS</span><br><progress id="file4" value="85" max="100"> 85% </progress></li>
+                            <li><span>JAVASCRIPT</span><br><progress id="file5" value="60" max="100"> 60% </progress>
+                            </li>
+                            <li><span>PYTHON</span><br><progress id="file6" value="92" max="100"> 92% </progress></li>
+                            <li><span>BASH</span><br><progress id="file7" value="65" max="100"> 65% </progress></li>
+                            <li><span>C++</span><br><progress id="file8" value="60" max="100"> 60% </progress></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="EDUCATION">
+                        <ul>
+                            <li><span>ALGONQUIN COLLEGE<br>Computer Programming | Ottawa,
+                                    Ontario</span><br>2022-2023<br>Dean's Honours List GPA: 3.8 / 4.0 (2023 Winter)<br>
+                                Current GPA: 3.8 / 4.0</li>
+
+                            <li><span>CARLETON UNIVERSITY<br>Software Engineering</span><br>2018-2020</li>
+
+
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="EXPERIENCE">
+                        <ul>
+                            <li><span>Inbound Support Representative, Amazon | Ottawa, Ontario</span><br>● Trained
+                                several associates on critical tasks such as ISS to launch Ottawa's most technologically
+                                advanced robotics
+                                facility<br>
+                                ● Refine the process for defective inventory and build a bridge between all departments
+                                <br>
+                                ● Troubleshoot and resolve inventory-related issues for associates using Amazon computer
+                                applications. <br>
+                                ● Resolve errors related to Amazon's inventory database management system
+                            </li>
+                            <li><span>Process Assistant, Amazon | Ottawa, Ontario </span><br>● Helping support daily
+                                management of department duties, including allocating labour, leading standups,
+                                assigning
+                                job duties, and communicating with internal and external suppliers</li>
+                            <li><span>Marketing Recruitment/Management, Global Faces Direct | Ottawa,
+                                    Ontario</span><br>● Responsible for managing a team of sales representatives and
+                                driving sales through market research and analysis
+                                <br>● Created and designed a website to outline roles and responsibility of sales
+                                representatives and attract motivated
+                                individuals to represent clients
+                                <br>● Used wide range of scheduling tools to create talent pipelines
+                                <br>● Actively recorded data of sales representatives day to day performance using Excel
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="GOALS">
+                        <ul>
+                            <li><span>BUILD A STRONG PORTFOLIO</span><br>I am currently working on building a strong
+                                portfolio to showcase my
+                                completed projects.</li>
+                            <li><span>NETWORK</span><br>This summer I will be engaging with current developers and reach
+                                out to devloper cummunities to gain valuable connections
+                                which will drive my career forward.</li>
+                            <li><span>EXPAND MY DEVLOPER KNOWLEDGE</span><br>Ensure that I have a strong understanding
+                                of fundamental programming concepts and learn to be effiecnt
+                                in creating FULL-STACK applications</li>
+
+
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="PROJECTS">
+                        <ul>
+                            <li><span>FLEXBOX PROJECT</span><br><br><a href="Lab3/flexbox.html">FLEXBOX</a></li>
+                            <li><span>CSS for WEBDEVELOPMENT</span><br><br><a href="Lab3/Lab3.html">CSS FOR
+                                    WEB-DEVELOPMENT</a></li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Jacob Roussel 2023</p>
+    </footer>
+
+</body>
+
+</html>

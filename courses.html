@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Roussel - Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <img src="resources/logoJACOB.png" class="logo" alt="LOGO FOR PAGE">
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="courses.html">Courses</a></li>
+
+
+        </ul>
+    </nav>
+    <div id="header">
+
+        <div id="courses">
+            <div class="container3">
+                <h1 class="subtitle">Courses</h1>
+                <div class="courses-list">
+                    <div class="search-filter">
+                        <input type="text" id="searchInput" onkeyup="searchCourses()"
+                            placeholder="Search for courses...">
+                        <select onchange="filterCoursesByLevel(this.value)">
+                            <option value="all">All</option>
+                            <option value="1">Level 01</option>
+                            <option value="2">Level 02</option>
+                        </select>
+
+                        <button onclick="sortCoursesByLevel()">Sort by Level</button>
+                    </div>
+
+
+                    <ul id="coursesList">
+
+                        <li>
+                            <div class="course-container" data-level="1">
+                                <h2>CST8118</h2>
+                                <p>Computer Essentials</p>
+                                <div class="image-container">
+                                    <img src="resources/computer.png" alt="Image">
+                                </div>
+                                <p>Students explain computer hardware, and use operating system software to maintain,
+                                    utilize,
+                                    and
+                                    secure a computer. Students practice the use of spreadsheet software to solve
+                                    problems, use
+                                    formulas, and visualize data with charts. Students discuss computer hardware and
+                                    software
+                                    with
+                                    regards to financial and environmental sustainability. Theory is reinforced with
+                                    application
+                                    by
+                                    means of practical laboratory assessments, including using virtualization software
+                                    to
+                                    install
+                                    guest
+                                    operating systems onto a host computer.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="course-container" data-level="1">
+                                <h2>CST8215</h2>
+                                <p>Introduction to Database</p>
+                                <div class="image-container">
+                                    <img src="resources/databaseicon.png" alt="Image">
+                                </div>
+                                <p>Students learn the fundamentals of relational databases design using Entity Relation
+                                    Diagrams
+                                    (ERDs),
+                                    and use Structured Query Language (SQL) to create, modify and query a database.
+                                    Students
+                                    design
+                                    and
+                                    create databases that are maintainable, secure and adaptable to change in business
+                                    requirements,
+                                    using normalization. Students become familiar with the functions of a Database
+                                    Management
+                                    System
+                                    (DBMS) and its components in comparison with legacy systems and alternative
+                                    information
+                                    storage
+                                    mechanisms.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="course-container" data-level="1">
+                                <h2>CST8300</h2>
+                                <p>Achieving Success in Changing Environments</p>
+                                <div class="image-container">
+                                    <img src="resources/success.png" alt="Image">
+                                </div>
+                                <p>Students explore the possibilities ahead, assess their own aptitudes and strengths,
+                                    and apply
+                                    critical thinking and decision-making tools to help resolve some of the important
+                                    issues in
+                                    our
+                                    complex society with its competing interests.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="course-container" data-level="1">
+                                <h2>CST8116</h2>
+                                <p>Introduction to Computer Programming</p>
+                                <div class="image-container">
+                                    <img src="resources/java.png" alt="Image">
+                                </div>
+                                <p>Ldevelop introductory knowledge of computer programming with emphasis on problem
+                                    analysis and
+                                    design,
+                                    using algorithms, pseudocode, flowcharts, UML Class Diagrams and testing, with the
+                                    Java
+                                    programming
+                                    language used as a means to implement problem solution designs. Through an
+                                    introduction to
+                                    the
+                                    Java
+                                    programming language students use sequential structures, selection structures,
+                                    repetition
+                                    structures, variables, constants, methods, constructors, one-dimensional arrays,
+                                    object-oriented
+                                    programming, classes, objects, abstraction, encapsulation, inputs, outputs, coding
+                                    conventions
+                                    and
+                                    documentation. Theory is reinforced with application by means of practical
+                                    laboratory
+                                    assessments.
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-container" data-level="1">
+                                <h2>MAT8001C</h2>
+                                <p>Technical Mathematics for Computer Science</p>
+                                <div class="image-container">
+                                    <img src="resources/math.png" alt="Image">
+                                </div>
+                                <p>Students manipulate algebraic expressions, solve algebraic equations and linear
+                                    systems and
+                                    learn the properties of and graph algebraic and transcendental functions. Students
+                                    investigate computer number systems in addition to Boolean algebra and logic to help
+                                    solve
+                                    problems involving computer systems. Students also study the addition and
+                                    subtraction of
+                                    vectors using vector components. Delivered in a modular format, this course is
+                                    equivalent to
+                                    the completion of all of the following math modules MAT8100 - A, B, C, D, E, F, and
+                                    L.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="course-container" data-level="1">
+                                <h2>ENL1813T</h2>
+                                <p>Communications I</p>
+                                <div class="image-container">
+                                    <img src="resources/comms.png" alt="Image">
+                                </div>
+                                <p>Students focus on meeting the requirements of effective communication. Through a
+                                    combination
+                                    of lectures, exercises, and independent learning, students practise writing,
+                                    speaking,
+                                    reading, listening, locating and documenting information and using technology to
+                                    communicate
+                                    professionally. Students develop and strengthen communication skills that contribute
+                                    to
+                                    success in both educational and workplace environments.</p>
+                            </div>
+                        </li>
+
+
+
+
+                        <li>
+                            <div class="course-container" data-level="2">
+                                <h2>CST2355</h2>
+                                <p>Database Systems</p>
+                                <div class="image-container">
+                                    <img src="resources/database.png" alt="Image">
+                                </div>
+                                <p>Students acquire practical experience using market-leading object-relational database
+                                    management
+                                    systems like Oracle and MySQL. Students obtain hands-on experience with advanced
+                                    engineering
+                                    modeling tools along with SQL, SQL scripts and programming with Oracle's PL/SQL
+                                    blocks.
+                                    Database
+                                    concepts covered include advanced SQL, case structures, rollup and cube operations,
+                                    metadata
+                                    manipulation, data storage and retrieval, security and transaction control and data
+                                    warehousing.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-container" data-level="2">
+                                <h2>CST8102</h2>
+                                <p>Operating System Fundamentals (GNU/Linux)</p>
+                                <div class="image-container">
+                                    <img src="resources/linux.png" alt="Image">
+                                </div>
+                                <p>Students explore the basic concepts and components of Operating Systems (OS), and how
+                                    they
+                                    function
+                                    and interact with hardware and software components. Students examine the details of
+                                    operating system
+                                    structures, process management, storage management, installation, configuration, and
+                                    administration
+                                    both in theory and through practical assignments based on the GNU/Linux operating
+                                    system.
+                                    Lab work
+                                    is designed to implement the theory by developing skills using the powerful
+                                    GNU/Linux
+                                    command-line
+                                    tools and utilities.</p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-container" data-level="2">
+                                <h2>CST8284</h2>
+                                <p>Object Oriented Programming (Java)</p>
+                                <div class="image-container">
+                                    <img src="resources/java.png" alt="Image">
+                                </div>
+                                <p>Students explore object-oriented programming methodology using the Java programming
+                                    language.
+                                    Object
+                                    oriented concepts, such as encapsulation, inheritance, abstraction and polymorphism
+                                    are
+                                    covered and
+                                    reinforced with practical applications. Students explore the basics of data
+                                    structures and
+                                    algorithms as well as basic Graphical User Interface (GUI) programming.</p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-container" data-level="2">
+                                <h2>CST8285</h2>
+                                <p>Web Programming</p>
+                                <div class="image-container">
+                                    <img src="resources/webdev.png" alt="Image">
+                                </div>
+                                <p>Students develop basic skills of web programming, website design and implementation.
+                                    JavaScript,
+                                    HTML5, and PHP are used to explore web-based solutions to problems of increasing
+                                    interactivity and
+                                    complexity. Lectures are reinforced by practical assignments that encourage students
+                                    to
+                                    construct
+                                    and maintain their own websites.</p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-container" data-level="2">
+                                <h2>ENL2019T</h2>
+                                <p>Technical Communication for Engineering Technologies</p>
+                                <div class="image-container">
+                                    <img src="resources/techcomm.png" alt="Image">
+                                </div>
+
+                                <p>Students are exposed to exercises and assignments designed to foster independent and
+                                    collaborative
+                                    critical thinking, research, writing, visual communication and presentation skills
+                                    related
+                                    to
+                                    technical topics.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="course-container" data-level="2">
+                                <h2>GEP1001</h2>
+                                <p>Cooperative Education and Job Readiness</p>
+                                <div class="image-container">
+                                    <img src="resources/download.png" alt="Image">
+                                </div>
+                                <p>Students are guided through a series of activities that prepare them to conduct a
+                                    professional
+                                    job search and succeed in the workplace.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Jacob Roussel 2023</p>
+    </footer>
+</body>
+
+</html>
